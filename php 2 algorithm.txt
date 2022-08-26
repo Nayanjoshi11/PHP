@@ -1,0 +1,13 @@
+Step 1 :Start
+
+Step 2:declare a function
+
+Step 3:Initialize a conditional statement
+
+Step 4:multiply the given number till till the conditional statement is matched
+
+Step 5:If the conditional statement is matched return 1
+
+Step 6:print the result calculated in the function
+
+Step 7:Stop

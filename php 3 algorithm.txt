@@ -1,0 +1,13 @@
+Step 1: Start
+
+Step 2:Enter two number a & b
+
+Step 3:Declare a third variable 
+
+Step 4:duplicate the value of a in the third variable
+
+Step 5:Put the value of b in a and value of third variable in b
+
+Step 6:Print the final values of the variable a and b
+
+Step 7:Stop

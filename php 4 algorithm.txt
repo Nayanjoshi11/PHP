@@ -1,0 +1,9 @@
+Step 1: Start
+
+Step 2:Initialize a loop having loop value 8 and condition till less than equal to 1
+
+Step 3:Initialize second loop it should operate till it gets less than first loop variable
+
+Step 4:Print the value of second loop
+
+Step 5:Stop
