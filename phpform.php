@@ -1,4 +1,5 @@
 
+
 <?php
 
     if($_SERVER["REQUEST_METHOD"]=== "POST"){
@@ -8,10 +9,36 @@
     
         $email = $_POST['email'];
         $password = $_POST['password'];
+
+        //database here
+
+        $conn= new mysqli("localhost","root","","login_auth");
         
-    
-        echo $email . " ";
-        echo $password;
+        if($conn->connect_error){
+            die("$conn->connect_error");
+        }
+
+        echo "success";
+
+        $sql = "SELECT * FROM user WHERE email='$email'";
+        $result=$conn->query($sql);
+        echo"<pre>";
+        print_r($result);
+        echo"</pre>";
+
+       $row = $result->fetch_assoc();
+
+       print_r($row);
+       echo"<pre>";
+
+       $db_email = $row['email'];
+       $db_password=$row['password'];
+       if($password===$db_password){
+        echo"login success";
+       }
+       else{
+        echo"login failed";
+       }
     }
 
 ?>
@@ -33,3 +60,4 @@
     
 </body>
 </html>
+   
