@@ -10,14 +10,14 @@
     <div class="containter p-3">
       <h3>TODO appplication</h3>
     <form action ="save-todo.php" method="post">
-      <input type="text" class="form control" name="todo" id="" >
-      <button type="submit" class="btn btn-primary">Add todo</button>
+      <input type="text" class="form-control" name="todo" id="" placeholder="wrtie text" >
+      <button type="submit" class="btn btn-primary mt-2">Add todo</button>
 </form>
 <table class="table table-striped">
   <thead>
     <tr>
       <th scope="col">ID</th>
-      <th scope="col">todo item</th>
+      <th scope="col">Name</th>
       <th scope="col">Edit</th>
     </tr>
   </thead>
